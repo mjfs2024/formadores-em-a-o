@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia | Professor Marcos José</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS GERAIS --- */
+        :root {
+            --cor-primaria: #01030a;        /* Azul escuro acadêmico */
+            --cor-secundaria: #01060e;      /* Azul claro para detalhes */
+            --cor-fundo: #607c9b;           /* Fundo levemente cinza/azul */
+            --cor-card: #f5eaea;            /* Fundo dos blocos branco */
+            --cor-texto: #00060e;           /* Texto cinza escuro para melhor leitura */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* --- SEÇÃO BIOGRAFIA (PERFIL) --- */
+        .perfil-container {
+            background-color: var(--cor-card);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(240, 10, 10, 0.05), 0 2px 4px -1px rgba(233, 131, 131, 0.03);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Responsividade para telas menores (celular) */
+        @media (max-width: 600px) {
+            .perfil-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .foto-perfil {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%; /* Transforma a foto em círculo */
+            object-fit: cover;  /* Não deixa a foto distorcer */
+            border: 4px solid var(--cor-secundaria);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .perfil-texto h1 {
+            color: var(--cor-primaria);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        /* --- SEÇÃO GLOSSÁRIO --- */
+        .glossario-container {
+            background-color: var(--cor-card);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            margin-bottom: 30px;
+        }
+
+        .glossario-container h2 {
+            color: var(--cor-primaria);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .termo {
+            font-weight: 700;
+            color: var(--cor-secundaria);
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .fonte-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--cor-secundaria);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .fonte-link:hover {
+            text-decoration: underline;
+        }
+
+        .ilustracao-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="perfil-container">
+            <img src="marcos.jpg" alt="Professor Marcos José" class="foto-perfil">
+            <div class="perfil-texto">
+                <h1>Biografia Professor Marcos José</h1>
+                <p>Me chamo Marcos José, sou formado em História e atualmente trabalho no CECM São Vicente Pallotti de Mandaguari. Estou trabalhando as disciplinas de História, História do Paraná e Educação Digital para turmas do Ensino Fundamental e Médio.</p>
+            </div>
+        </section>
+
+        <section class="glossario-container">
+            <h2>Glossário de História</h2>
+            <p class="termo">O que é imigração?</p>
+            <p>Imigração é o ato de entrada e fixação de indivíduos ou populações em um território ou país diferente de sua origem. Sob a perspectiva do local de acolhimento, o indivíduo é chamado de imigrante, buscando oportunidades de trabalho, melhores condições de vida ou refúgio.</p>
+
+            <a href="https://mundoeducacao.uol.com.br/geografia/imigracao.html" target="_blank" class="fonte-link">
+                🔗 Clique aqui para acessar a fonte
+            </a>
+
+            <img src="images.jpeg" alt="Ilustração sobre Imigração" class="ilustracao-img"> Imigrantes chegando no país.
+         
+        </section>
+
+        <section class="glossario-container">
+            <h2>Glossário de História</h2>
+            <p class="termo">O que é racismo?</p>
+            <p>Racismo é um conjunto de crenças e práticas que promovem a superioridade de uma raça em relação a outra. Ele se manifesta através de discriminação, preconceitos e desigualdades sociais.</p>
+
+            <a href="https://brasilescola.uol.com.br/o-que-e/o-que-e-sociologia/o-que-e-racismo.htm" target="_blank" class="fonte-link">
+                🔗 Clique aqui para acessar a fonte
+            </a>
+
+            <img src="racismo.jpeg" alt="Ilustração sobre Racismo" class="ilustracao-img">Racismo é crime.
+
+            
+            
+        </section>
+<section class="glossario-container">
+            <h2>Glossário de História</h2>
+            <p class="termo">O que é fonte histórica?</p>
+            <p>Fonte histórica é qualquer documento, objeto ou vestígio que permite conhecer e compreender o passado. Elas são fundamentais para a construção do conhecimento histórico.</p>
+
+            <a href="https://www.historiadomundo.com.br/curiosidades/fontes-historicas.htm" target="_blank" class="fonte-link">
+                🔗 Clique aqui para acessar a fonte
+            </a>
+
+            <img src="fonte.jpeg" alt="Ilustração sobre Fonte Histórica" class="fontebhistorica">Fontes Históricas.
+        </section>
+    </div>
+
+</body>
+
+</html>
